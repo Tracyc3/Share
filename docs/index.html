@@ -1,0 +1,30 @@
+<!doctype html><html><head><meta charset=UTF-8><title>Chrome Extension - By 袁干平</title><link rel=stylesheet href=https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css><link rel=stylesheet href=https://cdn.staticfile.org/prism/1.15.0/themes/prism.min.css><link rel=stylesheet href=https://cdn.staticfile.org/KaTeX/0.10.0-rc.1/katex.min.css><link href=./css/chunk-vendors.76373dd0.css rel=stylesheet></head><body><div><article id=webslides><section slide class="slide bg-black-blue aligncenter" image="https://s1.ax1x.com/2020/04/24/J0AO6s.png .dark"><span class="background dark" style="background-image:url('https://s1.ax1x.com/2020/04/24/J0AO6s.png')"></span><div class=wrap wrap=true><h2 class="text-landing text-shadow"><strong>深入理解 Chrome Extension</strong></h2><div class="ms grid"><div class=column></div><div class=column><p class=alignright>演讲者：袁干平</p><div class=text-intro></div></div></div></div></section><section slide class="slide bg-white"><div class=wrap wrap=true><h2 class="text-landing aligncenter">大纲</h2><hr><div class=grid><div class=column></div><div class=column><ol class="build moveIn"><li><span class=alignleft>基础准备</span></li><li><span class=alignleft>背景</span></li><li><span class=alignleft>Typescript 类型系统简述</span></li><li><span class=alignleft>&quot;高级用法&quot; 的使用场景与价值</span></li><li><span class=alignleft>类型推导与泛型操作符</span></li><li><span class=alignleft>常⻅类型推导实现逻辑梳理与实践⼊⻔</span></li><li><span class=alignleft>定制化扩展你的 Typescript</span></li><li><span class=alignleft>Q&amp;A</span></li></ol></div><div class=column></div></div></div></section></article></div><script>window.pluginsOptions = {}
+
+
+
+    window.webslidesOptions = {}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    let isPrintMode = false;
+    if(~location.search.indexOf('print-pdf')){
+        isPrintMode = true;
+        WebSlides.registerPlugin('scroll', function(){});
+    }
+    const wsOptions = {
+        loop: false
+    };
+    if(window.webslidesOptions){
+        for (let i in webslidesOptions){
+            if(webslidesOptions.hasOwnProperty(i)){
+                wsOptions[i] = webslidesOptions[i];
+            }
+        }
+    }
+    const ws = new WebSlides(wsOptions)
+
+    window.wsInstance = ws;
+    if(isPrintMode){
+        ws.slides.forEach(s=>s.show())
+    }
+}, false)</script><script src=./js/chunk-vendors.cd3a7502.js></script><script src=./js/index.72427e00.js></script></body></html>

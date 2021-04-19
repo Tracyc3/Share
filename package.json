@@ -1,0 +1,17 @@
+{
+  "name": "Share",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodeppt serve ppt/chromeExtension/index.md",
+    "build": "nodeppt build ppt/chromeExtension/index.md",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodeppt": "^2.2.2"
+  }
+}
