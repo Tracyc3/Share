@@ -94,9 +94,10 @@ speaker: 袁干平
 
 ```javascript
  {
-  "manifest_version": 2,
-  "name": "我的Chrome插件",
-  "version": "1.0.0",
+  "manifest_version": 2, // 使用的哪个版本的规则开发扩展
+  "name": "我的Chrome插件", // 这个是要显示在插件页面的
+  "description": "技术分享", // 插件的介绍
+  "version": "1.0.0", // 这个版本号会显示在插件下面, 所以不是随便填写的
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png"
@@ -104,7 +105,7 @@ speaker: 袁干平
   "browser_action": {
     "default_title": "你来点我呀",
     "default_popup": "popup/popup.html",
-    "default_icon": "images/icon32.png"
+    "default_icon": "images/icon32.png" // 默认显示的图片
   },
   "background": {
     "page": "background/background.html"
